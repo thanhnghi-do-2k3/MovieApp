@@ -15,21 +15,21 @@ import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
-public class MoviesCardAdapter extends RecyclerView.Adapter<MoviesCardAdapter.ViewHolder> {
+public class AllMovieAdapter extends RecyclerView.Adapter<AllMovieAdapter.ViewHolder> {
     private List<MovieInfo> items;
     private Context context;
 
-    public MoviesCardAdapter(List<MovieInfo> items,Context context) {
+    public AllMovieAdapter(List<MovieInfo> items, Context context) {
         this.items = items;
         this.context = context;
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.movie_card,parent,false);
+        LayoutInflater layoutInflater=LayoutInflater.from(context);
+        View view=layoutInflater.inflate(R.layout.all_movie_card,parent,false);
         return new ViewHolder(view);
     }
 
@@ -38,6 +38,7 @@ public class MoviesCardAdapter extends RecyclerView.Adapter<MoviesCardAdapter.Vi
         MovieInfo item = items.get(position);
         holder.title.setText(item.title);
         holder.year.setText(item.release_date);
+        holder.rating.setText(((Double)item.vote_average).toString());
         Integer resId = DataManager.getInstance(context).getMovieImgSrc(position,items);
         if (resId != 0) {
             holder.imageView.setImageResource(resId);
@@ -55,11 +56,14 @@ public class MoviesCardAdapter extends RecyclerView.Adapter<MoviesCardAdapter.Vi
         private ImageView imageView;
         private TextView title;
         private TextView year;
+        private TextView rating;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.movie_img);
             title = itemView.findViewById(R.id.movie_title);
             year = itemView.findViewById(R.id.movie_year);
+            rating = itemView.findViewById(R.id.movie_rating);
         }
     }
 

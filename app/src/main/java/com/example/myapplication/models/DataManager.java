@@ -13,12 +13,14 @@ import com.example.myapplication.utils.JsonReader;
 import com.google.gson.Gson;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class DataManager {
     private static DataManager instance = null;
     public List<MovieInfo> popularMovies;
     public List<MovieInfo> nowPlayingMovies;
-    public List<MovieInfo> topRatedMovies;
+    public List<MovieInfo> allMovies;
 
     private Context context;
 
@@ -48,6 +50,7 @@ public class DataManager {
             instance = new DataManager(context);
             instance.generatePopularMovies();
             instance.generateNowPlayingMovies();
+            instance.allMovies = Stream.concat(instance.popularMovies.stream(), instance.nowPlayingMovies.stream()).collect(Collectors.toList());
         }
         return instance;
     }

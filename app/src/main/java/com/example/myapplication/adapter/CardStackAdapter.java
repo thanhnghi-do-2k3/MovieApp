@@ -43,20 +43,13 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MovieInfo item = items.get(position);
         String imageUrl = "https://image.tmdb.org/t/p/w200" + item.poster_path;
-//        Uri uri = Uri.parse(imageUrl);
         Log.d("CardStackAdapter", "imageUrl: " + imageUrl);
-        Integer src = DataManager.getInstance(context).getMovieImgSrc(position,items);
-        holder.imageView.setImageResource(src);
-//        holder.imageView.setImageURI(uri);
-
-//        GlideUrl url = new GlideUrl(imageUrl, new LazyHeaders.Builder()
-//                .addHeader("User-Agent", WebSettings.getDefaultUserAgent(holder.imageView.getContext()))
-//                .build());
-//
-//        Glide.with(context)
-//                .load(imageUrl)
-//                .placeholder(R.mipmap.ic_launcher)
-//                .into(holder.imageView);
+        Integer resId = DataManager.getInstance(context).getMovieImgSrc(position,items);
+        if (resId != 0) {
+            holder.imageView.setImageResource(resId);
+        } else {
+            holder.imageView.setImageResource(R.drawable.no_img_avai);
+        }
     }
 
     @Override
