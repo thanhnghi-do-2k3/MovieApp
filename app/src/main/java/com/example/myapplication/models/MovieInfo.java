@@ -1,4 +1,6 @@
 package com.example.myapplication.models;
+
+
 import java.util.List;
 
 public class MovieInfo {
@@ -16,5 +18,6 @@ public class MovieInfo {
     public boolean video;
     public double vote_average;
     public int vote_count;
+
     // Public getters and setters
 }

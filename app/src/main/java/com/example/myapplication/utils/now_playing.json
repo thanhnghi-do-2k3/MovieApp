@@ -1,0 +1,404 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/xgGGinKRL8xeRkaAR9RMbtyk60y.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                10402,
+                14,
+                35
+            ],
+            "id": 901362,
+            "original_language": "en",
+            "original_title": "Trolls Band Together",
+            "overview": "When Branch’s brother, Floyd, is kidnapped for his musical talents by a pair of nefarious pop-star villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd from a fate even worse than pop-culture obscurity.",
+            "popularity": 1839.78,
+            "poster_path": "/bkpPTZUdq31UGDovmszsg2CchiI.jpg",
+            "release_date": "2023-10-12",
+            "title": "Trolls Band Together",
+            "video": false,
+            "vote_average": 7.202,
+            "vote_count": 188
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kjQBrc00fB2RjHZB3PGR4w9ibpz.jpg",
+            "genre_ids": [
+                878,
+                28,
+                53
+            ],
+            "id": 670292,
+            "original_language": "en",
+            "original_title": "The Creator",
+            "overview": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war—and mankind itself.",
+            "popularity": 1335.428,
+            "poster_path": "/vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
+            "release_date": "2023-09-27",
+            "title": "The Creator",
+            "video": false,
+            "vote_average": 7.151,
+            "vote_count": 1175
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "id": 507089,
+            "original_language": "en",
+            "original_title": "Five Nights at Freddy's",
+            "overview": "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
+            "popularity": 1077.066,
+            "poster_path": "/j9mH1pr3IahtraTWxVEMANmPSGR.jpg",
+            "release_date": "2023-10-25",
+            "title": "Five Nights at Freddy's",
+            "video": false,
+            "vote_average": 7.865,
+            "vote_count": 2558
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wl4NWiZwpzZH67HiDgpDImLyds9.jpg",
+            "genre_ids": [
+                28,
+                12,
+                53
+            ],
+            "id": 299054,
+            "original_language": "en",
+            "original_title": "Expend4bles",
+            "overview": "Armed with every weapon they can get their hands on and the skills to use them, The Expendables are the world’s last line of defense and the team that gets called when all other options are off the table. But new team members with new styles and tactics are going to give “new blood” a whole new meaning.",
+            "popularity": 889.087,
+            "poster_path": "/iwsMu0ehRPbtaSxqiaUDQB9qMWT.jpg",
+            "release_date": "2023-09-15",
+            "title": "Expend4bles",
+            "video": false,
+            "vote_average": 6.426,
+            "vote_count": 809
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9PqD3wSIjntyJDBzMNuxuKHwpUD.jpg",
+            "genre_ids": [
+                16,
+                35,
+                10751
+            ],
+            "id": 1075794,
+            "original_language": "en",
+            "original_title": "Leo",
+            "overview": "Jaded 74-year-old lizard Leo has been stuck in the same Florida classroom for decades with his terrarium-mate turtle. When he learns he only has one year left to live, he plans to escape to experience life on the outside but instead gets caught up in the problems of his anxious students — including an impossibly mean substitute teacher.",
+            "popularity": 1267.179,
+            "poster_path": "/pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg",
+            "release_date": "2023-11-17",
+            "title": "Leo",
+            "video": false,
+            "vote_average": 7.937,
+            "vote_count": 229
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/f1AQhx6ZfGhPZFTVKgxG91PhEYc.jpg",
+            "genre_ids": [
+                18,
+                36,
+                10752
+            ],
+            "id": 753342,
+            "original_language": "en",
+            "original_title": "Napoleon",
+            "overview": "An epic that details the checkered rise and fall of French Emperor Napoleon Bonaparte and his relentless journey to power through the prism of his addictive, volatile relationship with his wife, Josephine.",
+            "popularity": 670.48,
+            "poster_path": "/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
+            "release_date": "2023-11-22",
+            "title": "Napoleon",
+            "video": false,
+            "vote_average": 6.447,
+            "vote_count": 322
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5a4JdoFwll5DRtKMe7JLuGQ9yJm.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 695721,
+            "original_language": "en",
+            "original_title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+            "overview": "64 years before he becomes the tyrannical president of Panem, Coriolanus Snow sees a chance for a change in fortunes when he mentors Lucy Gray Baird, the female tribute from District 12.",
+            "popularity": 553.155,
+            "poster_path": "/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg",
+            "release_date": "2023-11-15",
+            "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+            "video": false,
+            "vote_average": 7.294,
+            "vote_count": 449
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dZbLqRjjiiNCpTYzhzL2NMvz4J0.jpg",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "id": 951491,
+            "original_language": "en",
+            "original_title": "Saw X",
+            "overview": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer returns to his work, turning the tables on the con artists in his signature visceral way through devious, deranged, and ingenious traps.",
+            "popularity": 472.998,
+            "poster_path": "/aQPeznSu7XDTrrdCtT5eLiu52Yu.jpg",
+            "release_date": "2023-09-26",
+            "title": "Saw X",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 1164
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "id": 609681,
+            "original_language": "en",
+            "original_title": "The Marvels",
+            "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+            "popularity": 492.065,
+            "poster_path": "/Ag3D9qXjhJ2FUkrlJ0Cv1pgxqYQ.jpg",
+            "release_date": "2023-11-08",
+            "title": "The Marvels",
+            "video": false,
+            "vote_average": 6.584,
+            "vote_count": 562
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 762430,
+            "original_language": "en",
+            "original_title": "Retribution",
+            "overview": "When a mysterious caller puts a bomb under his car seat, Matt Turner begins a high-speed chase across the city to complete a specific series of tasks- all with his kids trapped in the back seat.",
+            "popularity": 407.931,
+            "poster_path": "/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+            "release_date": "2023-08-23",
+            "title": "Retribution",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 691
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pA3vdhadJPxF5GA1uo8OPTiNQDT.jpg",
+            "genre_ids": [
+                28,
+                18
+            ],
+            "id": 678512,
+            "original_language": "en",
+            "original_title": "Sound of Freedom",
+            "overview": "The story of Tim Ballard, a former US government agent, who quits his job in order to devote his life to rescuing children from global sex traffickers.",
+            "popularity": 435.108,
+            "poster_path": "/qA5kPYZA7FkVvqcEfJRoOy4kpHg.jpg",
+            "release_date": "2023-07-03",
+            "title": "Sound of Freedom",
+            "video": false,
+            "vote_average": 8.09,
+            "vote_count": 1528
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/azD31DjpV3PJfjF3h72LVw2WCSD.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 807172,
+            "original_language": "en",
+            "original_title": "The Exorcist: Believer",
+            "overview": "When two girls disappear into the woods and return three days later with no memory of what happened to them, the father of one girl seeks out Chris MacNeil, who's been forever altered by what happened to her daughter fifty years ago.",
+            "popularity": 372.06,
+            "poster_path": "/fFXkAlMH2iQrNknv4eq7LGTkcti.jpg",
+            "release_date": "2023-10-04",
+            "title": "The Exorcist: Believer",
+            "video": false,
+            "vote_average": 6.191,
+            "vote_count": 613
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zgQQF04u3OgNBJqClRNby1FPz9s.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                28,
+                878,
+                35
+            ],
+            "id": 893723,
+            "original_language": "en",
+            "original_title": "PAW Patrol: The Mighty Movie",
+            "overview": "A magical meteor crash lands in Adventure City and gives the PAW Patrol pups superpowers, transforming them into The Mighty Pups.",
+            "popularity": 416.857,
+            "poster_path": "/aTvePCU7exLepwg5hWySjwxojQK.jpg",
+            "release_date": "2023-09-21",
+            "title": "PAW Patrol: The Mighty Movie",
+            "video": false,
+            "vote_average": 6.9,
+            "vote_count": 180
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sYKYfeJK83QlwL0ty5gOZ7MazCv.jpg",
+            "genre_ids": [
+                18,
+                10749
+            ],
+            "id": 1134754,
+            "original_language": "id",
+            "original_title": "172 Days",
+            "overview": "Zira was united with Amer for 172 very memorable days. Fate separated, Amer left too soon, leaving many sweet memories for Zira.",
+            "popularity": 417.235,
+            "poster_path": "/pbeSOr5ODJMHMzR4hbLXhnHNs1S.jpg",
+            "release_date": "2023-11-23",
+            "title": "172 Days",
+            "video": false,
+            "vote_average": 4.5,
+            "vote_count": 6
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cCmGKWhZbRsPyDTfRXTViflk9Wr.jpg",
+            "genre_ids": [
+                35,
+                10749
+            ],
+            "id": 1034940,
+            "original_language": "fr",
+            "original_title": "Nouveaux riches",
+            "overview": "Trapped by his own lies to please the sublime Stella and ensure their lifestyle, Thiago commits little scams to keep up appearances. Unsurprisingly, when the masks fall (well, especially her wig), her life collapses. However, when he crosses paths with Stéphanie, on the verge of becoming extremely rich thanks to cryptocurrency, he regains confidence. Would she be the solution to all his problems or has he found his master?",
+            "popularity": 347.552,
+            "poster_path": "/cQvINIqpk81Ax0QCcQXxjGD7Dgv.jpg",
+            "release_date": "2023-11-17",
+            "title": "All-Time High",
+            "video": false,
+            "vote_average": 5.782,
+            "vote_count": 39
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ehumsuIBbgAe1hg343oszCLrAfI.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                14,
+                12
+            ],
+            "id": 1022796,
+            "original_language": "en",
+            "original_title": "Wish",
+            "overview": "Asha, a sharp-witted idealist, makes a wish so powerful that it is answered by a cosmic force – a little ball of boundless energy called Star. Together, Asha and Star confront a most formidable foe - the ruler of Rosas, King Magnifico - to save her community and prove that when the will of one courageous human connects with the magic of the stars, wondrous things can happen.",
+            "popularity": 408.422,
+            "poster_path": "/8QtDhh8mnGUEyrJsaeb3kYgDRaA.jpg",
+            "release_date": "2023-11-13",
+            "title": "Wish",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 52
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iIvQnZyzgx9TkbrOgcXx0p7aLiq.jpg",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "id": 1008042,
+            "original_language": "en",
+            "original_title": "Talk to Me",
+            "overview": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
+            "popularity": 287.52,
+            "poster_path": "/kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
+            "release_date": "2023-07-26",
+            "title": "Talk to Me",
+            "video": false,
+            "vote_average": 7.197,
+            "vote_count": 1813
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/drfl2eWipiibW3u3Ybx9HQ8VgIn.jpg",
+            "genre_ids": [
+                27,
+                9648,
+                53
+            ],
+            "id": 841742,
+            "original_language": "fr",
+            "original_title": "Megalomaniac",
+            "overview": "Felix and Martha, the two offspring of legendary serial murderer The Skinner of Mons, grapple with the grotesque legacy bequeathed to them. While Martha works a menial janitorial job, Felix continues his father's reign of terror. But following a brutal attack at work, Martha quickly descends into madness, finding she must come to terms with the infamous blood that flows through her veins.",
+            "popularity": 242.502,
+            "poster_path": "/8HKjrjwTjvDscC9uZNk6dCRHcfd.jpg",
+            "release_date": "2023-09-08",
+            "title": "Megalomaniac",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 15
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lyHmhoRj3zXSdeCYbs2oOXLCF4K.jpg",
+            "genre_ids": [
+                16,
+                12,
+                10751,
+                14
+            ],
+            "id": 459003,
+            "original_language": "uk",
+            "original_title": "Мавка: Лісова пісня",
+            "overview": "Forest soul Mavka faces an impossible choice between her heart and her duty as guardian to the Heart of the Forest, when she falls in love with the talented young human musician Lukas.",
+            "popularity": 277.664,
+            "poster_path": "/eeJjd9JU2Mdj9d7nWRFLWlrcExi.jpg",
+            "release_date": "2023-03-02",
+            "title": "Mavka: The Forest Song",
+            "video": false,
+            "vote_average": 7.283,
+            "vote_count": 511
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tj7mp7uWjVw5N73G5Hwm1bkMOcD.jpg",
+            "genre_ids": [
+                28,
+                10752
+            ],
+            "id": 975902,
+            "original_language": "en",
+            "original_title": "Boudica",
+            "overview": "Inspired by events in A.D. 60, Boudica follows the eponymous Celtic warrior who rules the Iceni people alongside her husband Prasutagus. When he dies at the hands of Roman soldiers, Boudica’s kingdom is left without a male heir and the Romans seize her land and property.  Driven to the edge of madness and determined to avenge her husband’s death, Boudica rallies the various tribes from the region and wages an epic war against the mighty Roman empire.",
+            "popularity": 264.107,
+            "poster_path": "/adMcxfUonnm9RvPImGHy25wYUks.jpg",
+            "release_date": "2023-10-26",
+            "title": "Boudica",
+            "video": false,
+            "vote_average": 6.057,
+            "vote_count": 87
+        }
+    ],
+    "total_pages": 255,
+    "total_results": 5082
+}

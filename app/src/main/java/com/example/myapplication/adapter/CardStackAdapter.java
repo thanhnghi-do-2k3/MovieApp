@@ -1,27 +1,35 @@
 package com.example.myapplication.adapter;
 
+import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.load.model.GlideUrl;
+import com.bumptech.glide.load.model.LazyHeaders;
 import com.example.myapplication.R;
+import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
 
 import java.util.List;
 import com.bumptech.glide.Glide;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.ViewHolder> {
 
     private List<MovieInfo> items;
+    private Context context;
 
-    public CardStackAdapter(List<MovieInfo> items) {
+    public CardStackAdapter(List<MovieInfo> items,Context context) {
         this.items = items;
+        this.context = context;
     }
 
     @NonNull
@@ -34,10 +42,21 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MovieInfo item = items.get(position);
-        String imageUrl = "https://image.tmdb.org/t/p/w400" + item.poster_path;
-        Uri uri = Uri.parse(imageUrl);
+        String imageUrl = "https://image.tmdb.org/t/p/w200" + item.poster_path;
+//        Uri uri = Uri.parse(imageUrl);
         Log.d("CardStackAdapter", "imageUrl: " + imageUrl);
-        holder.imageView.setImageURI(uri);
+        Integer src = DataManager.getInstance(context).getMovieImgSrc(position,items);
+        holder.imageView.setImageResource(src);
+//        holder.imageView.setImageURI(uri);
+
+//        GlideUrl url = new GlideUrl(imageUrl, new LazyHeaders.Builder()
+//                .addHeader("User-Agent", WebSettings.getDefaultUserAgent(holder.imageView.getContext()))
+//                .build());
+//
+//        Glide.with(context)
+//                .load(imageUrl)
+//                .placeholder(R.mipmap.ic_launcher)
+//                .into(holder.imageView);
     }
 
     @Override
@@ -45,7 +64,12 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
         return items.size();
     }
 
+    public void setItems(List<MovieInfo> items) {
+        this.items = items;
+    }
+
     class ViewHolder extends RecyclerView.ViewHolder {
+
         ImageView imageView; // Assuming your item_card.xml has a TextView with this ID.
 
         ViewHolder(View view) {
@@ -53,4 +77,5 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
             imageView = view.findViewById(R.id.image_view); // Make sure this ID exists in your item_card.xml layout.
         }
     }
+
 }
