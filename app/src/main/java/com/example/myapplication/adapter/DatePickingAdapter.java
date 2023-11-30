@@ -10,13 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.models.Date;
+import com.example.myapplication.utils.DateSystem;
 
 import java.util.List;
 
 public class DatePickingAdapter extends RecyclerView.Adapter<DatePickingAdapter.ViewHolder>{
     private Context context;
-    private Date date = new Date();
+    private DateSystem date = new DateSystem();
     private List<Info> Items = new java.util.ArrayList<>();
     private final String[] days = new String[] { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };
     private boolean selected = false;

@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.adapter.AllMovieAdapter;
@@ -20,7 +22,7 @@ public class AllMovieScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_movie_screen);
-        SystemUiHelper.enableImmersiveMode(this);
+        ImageView backButton = findViewById(R.id.back_button);
 
         List<MovieInfo> allMovieList = DataManager.getInstance(this).allMovies;
 
@@ -28,5 +30,20 @@ public class AllMovieScreen extends AppCompatActivity {
         AllMovieAdapter allMovieAdapter = new AllMovieAdapter(allMovieList,this);
         recyclerView.setLayoutManager(new GridLayoutManager(this,3));
         recyclerView.setAdapter(allMovieAdapter);
+
+        backButton.setOnClickListener(v -> {
+            finish();
+        });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SystemUiHelper.enableImmersiveMode(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

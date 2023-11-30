@@ -1,8 +1,8 @@
-package com.example.myapplication.models;
+package com.example.myapplication.utils;
 
 import java.util.Calendar;
 
-public class Date {
+public class DateSystem {
     private Calendar calendar = Calendar.getInstance();
 
     public int getDay() {

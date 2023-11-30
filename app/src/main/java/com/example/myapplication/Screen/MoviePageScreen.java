@@ -37,7 +37,6 @@ public class MoviePageScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.movie_page_screen);
-        SystemUiHelper.enableImmersiveMode(this);
 
         movie = new MovieInfo();
         initView();
@@ -114,4 +113,16 @@ public class MoviePageScreen extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SystemUiHelper.enableImmersiveMode(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }

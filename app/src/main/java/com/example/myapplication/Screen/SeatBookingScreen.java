@@ -34,7 +34,6 @@ public class SeatBookingScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seat_booking_screen);
-        SystemUiHelper.enableImmersiveMode(this);
 
         InitView();
         List<Seat> items = DataManager.getInstance(this).seats;
@@ -90,5 +89,16 @@ public class SeatBookingScreen extends AppCompatActivity {
                 movieImg.setScaleType(ImageView.ScaleType.MATRIX);
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SystemUiHelper.enableImmersiveMode(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

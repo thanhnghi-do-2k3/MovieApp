@@ -4,28 +4,22 @@ import static androidx.core.content.ContextCompat.startActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.load.model.GlideUrl;
-import com.bumptech.glide.load.model.LazyHeaders;
 import com.example.myapplication.R;
 import com.example.myapplication.Screen.MoviePageScreen;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
 
 import java.util.List;
-import com.bumptech.glide.Glide;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.ViewHolder> {
 
@@ -40,7 +34,7 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cards, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_stack_card, parent, false);
         return new ViewHolder(view);
     }
 
@@ -79,7 +73,7 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
 
         ViewHolder(View view) {
             super(view);
-            imageView = view.findViewById(R.id.image_view); // Make sure this ID exists in your item_card.xml layout.
+            imageView = view.findViewById(R.id.movie_stack_image); // Make sure this ID exists in your item_card.xml layout.
         }
     }
 
