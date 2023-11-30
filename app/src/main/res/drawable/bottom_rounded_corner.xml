@@ -1,0 +1,10 @@
+<!-- rounded_bottom.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-10dp">
+        <shape android:shape="rectangle">
+            <corners android:topRightRadius="0dp" android:topLeftRadius="0dp"
+                android:bottomRightRadius="32dp" android:bottomLeftRadius="32dp"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</layer-list>

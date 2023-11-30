@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 2,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 3,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 4,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 5,
+        "status": "booked",
+        "booking_time": "2023-11-17 03:18"
+    },
+    {
+        "id": 6,
+        "status": "booked",
+        "booking_time": "2023-11-13 03:18"
+    },
+    {
+        "id": 7,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 8,
+        "status": "booked",
+        "booking_time": "2023-11-05 03:18"
+    },
+    {
+        "id": 9,
+        "status": "booked",
+        "booking_time": "2023-11-22 03:18"
+    },
+    {
+        "id": 10,
+        "status": "booked",
+        "booking_time": "2023-11-20 03:18"
+    },
+    {
+        "id": 11,
+        "status": "booked",
+        "booking_time": "2023-11-25 03:18"
+    },
+    {
+        "id": 12,
+        "status": "booked",
+        "booking_time": "2023-11-03 03:18"
+    },
+    {
+        "id": 13,
+        "status": "booked",
+        "booking_time": "2023-11-21 03:18"
+    },
+    {
+        "id": 14,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 15,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 16,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 17,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 18,
+        "status": "booked",
+        "booking_time": "2023-11-08 03:18"
+    },
+    {
+        "id": 19,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 20,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 21,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 22,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 23,
+        "status": "booked",
+        "booking_time": "2023-11-22 03:18"
+    },
+    {
+        "id": 24,
+        "status": "booked",
+        "booking_time": "2023-11-29 03:18"
+    },
+    {
+        "id": 25,
+        "status": "booked",
+        "booking_time": "2023-11-02 03:18"
+    },
+    {
+        "id": 26,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 27,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 28,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 29,
+        "status": "booked",
+        "booking_time": "2023-11-06 03:18"
+    },
+    {
+        "id": 30,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 31,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 32,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 33,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 34,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 35,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 36,
+        "status": "booked",
+        "booking_time": "2023-11-21 03:18"
+    },
+    {
+        "id": 37,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 38,
+        "status": "booked",
+        "booking_time": "2023-11-30 03:18"
+    },
+    {
+        "id": 39,
+        "status": "booked",
+        "booking_time": "2023-11-25 03:18"
+    },
+    {
+        "id": 40,
+        "status": "booked",
+        "booking_time": "2023-11-15 03:18"
+    },
+    {
+        "id": 41,
+        "status": "booked",
+        "booking_time": "2023-11-11 03:18"
+    },
+    {
+        "id": 42,
+        "status": "booked",
+        "booking_time": "2023-11-01 03:18"
+    },
+    {
+        "id": 43,
+        "status": "booked",
+        "booking_time": "2023-11-06 03:18"
+    },
+    {
+        "id": 44,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 45,
+        "status": "booked",
+        "booking_time": "2023-11-16 03:18"
+    },
+    {
+        "id": 46,
+        "status": "booked",
+        "booking_time": "2023-11-27 03:18"
+    },
+    {
+        "id": 47,
+        "status": "booked",
+        "booking_time": "2023-11-17 03:18"
+    },
+    {
+        "id": 48,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 49,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 50,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 51,
+        "status": "booked",
+        "booking_time": "2023-11-07 03:18"
+    },
+    {
+        "id": 52,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 53,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 54,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 55,
+        "status": "booked",
+        "booking_time": "2023-11-21 03:18"
+    },
+    {
+        "id": 56,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 57,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 58,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 59,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 60,
+        "status": "booked",
+        "booking_time": "2023-11-06 03:18"
+    },
+    {
+        "id": 61,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 62,
+        "status": "booked",
+        "booking_time": "2023-11-19 03:18"
+    },
+    {
+        "id": 63,
+        "status": "booked",
+        "booking_time": "2023-11-02 03:18"
+    },
+    {
+        "id": 64,
+        "status": "booked",
+        "booking_time": "2023-11-04 03:18"
+    },
+    {
+        "id": 65,
+        "status": "booked",
+        "booking_time": "2023-11-12 03:18"
+    },
+    {
+        "id": 66,
+        "status": "booked",
+        "booking_time": "2023-11-27 03:18"
+    },
+    {
+        "id": 67,
+        "status": "booked",
+        "booking_time": "2023-11-26 03:18"
+    },
+    {
+        "id": 68,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 69,
+        "status": "booked",
+        "booking_time": "2023-11-28 03:18"
+    },
+    {
+        "id": 70,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 71,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 72,
+        "status": "booked",
+        "booking_time": "2023-11-08 03:18"
+    },
+    {
+        "id": 73,
+        "status": "booked",
+        "booking_time": "2023-11-19 03:18"
+    },
+    {
+        "id": 74,
+        "status": "booked",
+        "booking_time": "2023-11-28 03:18"
+    },
+    {
+        "id": 75,
+        "status": "booked",
+        "booking_time": "2023-11-01 03:18"
+    },
+    {
+        "id": 76,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 77,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 78,
+        "status": "available",
+        "booking_time": ""
+    },
+    {
+        "id": 79,
+        "status": "booked",
+        "booking_time": "2023-11-27 03:18"
+    },
+    {
+        "id": 80,
+        "status": "booked",
+        "booking_time": "2023-11-30 03:18"
+    }
+]

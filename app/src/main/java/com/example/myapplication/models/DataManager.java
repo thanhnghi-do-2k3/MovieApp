@@ -8,10 +8,11 @@ import android.graphics.Movie;
 import android.util.Log;
 
 import com.example.myapplication.R;
-import com.example.myapplication.sampledata.JsonFile;
 import com.example.myapplication.utils.JsonReader;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,12 +22,12 @@ public class DataManager {
     public List<MovieInfo> popularMovies;
     public List<MovieInfo> nowPlayingMovies;
     public List<MovieInfo> allMovies;
-
+    public List<Seat> seats;
+    private JsonReader jsonReader = new JsonReader();
     private Context context;
 
-    JsonFile jsonFile = new JsonFile();
     void generatePopularMovies() {
-        String jsonData = jsonFile.jsonPopular;
+        String jsonData = jsonReader.loadJSONFromAsset(context, "Json/popular.json");
         Log.d("DataManager", "jsonData: " + jsonData.length());
         Gson gson = new Gson();
         MovieResponse movieResponse = gson.fromJson(jsonData, MovieResponse.class);
@@ -34,11 +35,19 @@ public class DataManager {
     }
 
     void generateNowPlayingMovies() {
-        String jsonData = jsonFile.jsonNowPlaying;
+        String jsonData = jsonReader.loadJSONFromAsset(context, "Json/now_playing.json");
         Log.d("DataManager", "jsonData: " + jsonData.length());
         Gson gson = new Gson();
         MovieResponse movieResponse = gson.fromJson(jsonData, MovieResponse.class);
         nowPlayingMovies = movieResponse.results;
+    }
+
+    void generateSeats() {
+        String jsonData = jsonReader.loadJSONFromAsset(context, "Json/seats.json");
+        Log.d("DataManager", "jsonData: " + jsonData.length());
+        Gson gson = new Gson();
+        Type seatListType = new TypeToken<List<Seat>>(){}.getType();
+        seats = gson.fromJson(jsonData, seatListType);
     }
 
     private DataManager(Context context) {
@@ -51,12 +60,21 @@ public class DataManager {
             instance.generatePopularMovies();
             instance.generateNowPlayingMovies();
             instance.allMovies = Stream.concat(instance.popularMovies.stream(), instance.nowPlayingMovies.stream()).collect(Collectors.toList());
+            instance.generateSeats();
         }
         return instance;
     }
 
     public Integer getMovieImgSrc(int position, List<MovieInfo> movies) {
         String res = (movies.get(position).poster_path).substring(1).toLowerCase().replace(".jpg", "");
+        res = '_' + res;
+        int resID = context.getResources().getIdentifier(res, "drawable", context.getPackageName());
+        Log.d("DataManager", "resID: " + resID);
+        return resID;
+    }
+
+    public Integer getMovieImgSrc(MovieInfo movie) {
+        String res = (movie.poster_path).substring(1).toLowerCase().replace(".jpg", "");
         res = '_' + res;
         int resID = context.getResources().getIdentifier(res, "drawable", context.getPackageName());
         Log.d("DataManager", "resID: " + resID);

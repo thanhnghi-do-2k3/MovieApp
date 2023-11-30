@@ -1,9 +1,10 @@
 package com.example.myapplication.models;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class MovieInfo {
+public class MovieInfo implements Serializable {
     public boolean adult;
     public String backdrop_path;
     public List<Integer> genre_ids;

@@ -1,6 +1,10 @@
 package com.example.myapplication.adapter;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.Screen.MoviePageScreen;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
 
@@ -45,6 +50,13 @@ public class AllMovieAdapter extends RecyclerView.Adapter<AllMovieAdapter.ViewHo
         } else {
             holder.imageView.setImageResource(R.drawable.no_img_avai);
         }
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, MoviePageScreen.class);
+            Bundle sendBundle = new Bundle();
+            sendBundle.putSerializable("movie", item);
+            intent.putExtras(sendBundle);
+            startActivity(context,intent,null);
+        });
     }
 
     @Override

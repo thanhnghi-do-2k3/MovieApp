@@ -1,7 +1,11 @@
 package com.example.myapplication.adapter;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import com.example.myapplication.R;
+import com.example.myapplication.Screen.MoviePageScreen;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
 
@@ -50,6 +55,13 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
         } else {
             holder.imageView.setImageResource(R.drawable.no_img_avai);
         }
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, MoviePageScreen.class);
+            Bundle sendBundle = new Bundle();
+            sendBundle.putSerializable("movie", items.get(position));
+            intent.putExtras(sendBundle);
+            startActivity(context,intent,null);
+        });
     }
 
     @Override
