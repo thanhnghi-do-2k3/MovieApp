@@ -14,6 +14,7 @@ import com.example.myapplication.adapter.CardStackAdapter;
 import com.example.myapplication.adapter.MoviesCardAdapter;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
+import com.example.myapplication.utils.SystemUiHelper;
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 import com.yuyakaido.android.cardstackview.CardStackView;
 import com.yuyakaido.android.cardstackview.Direction;
@@ -28,6 +29,7 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
+        SystemUiHelper.enableImmersiveMode(this);
 
         Button back_button = findViewById(R.id.stack_back_button);
         Button next_button = findViewById(R.id.stack_next_button);

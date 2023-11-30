@@ -10,6 +10,7 @@ import com.example.myapplication.R;
 import com.example.myapplication.adapter.AllMovieAdapter;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
+import com.example.myapplication.utils.SystemUiHelper;
 
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class AllMovieScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_movie_screen);
+        SystemUiHelper.enableImmersiveMode(this);
 
         List<MovieInfo> allMovieList = DataManager.getInstance(this).allMovies;
 

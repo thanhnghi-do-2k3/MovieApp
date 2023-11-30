@@ -19,6 +19,7 @@ import com.example.myapplication.R;
 import com.example.myapplication.adapter.DatePickingAdapter;
 import com.example.myapplication.models.DataManager;
 import com.example.myapplication.models.MovieInfo;
+import com.example.myapplication.utils.SystemUiHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MoviePageScreen extends AppCompatActivity {
@@ -31,11 +32,14 @@ public class MoviePageScreen extends AppCompatActivity {
     private RecyclerView TimepickerRecycler[] = new RecyclerView[4];
     private ImageView backBtn;
     private FloatingActionButton fab;
+    private MovieInfo movie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.movie_page_screen);
-        MovieInfo movie = new MovieInfo();
+        SystemUiHelper.enableImmersiveMode(this);
+
+        movie = new MovieInfo();
         initView();
 
         Intent intent = getIntent();
@@ -52,6 +56,7 @@ public class MoviePageScreen extends AppCompatActivity {
         } else {
             MovieImg.setImageResource(R.drawable.no_img_avai);
         }
+
         Log.d("MoviePageScreen", "movie: " + movie.title);
         MovieTitle.setText(movie.title);
         MovieDescription.setText(movie.overview);
@@ -102,7 +107,10 @@ public class MoviePageScreen extends AppCompatActivity {
         });
 
         fab.setOnClickListener(v -> {
+            Bundle extra = new Bundle();
+            extra.putSerializable("movie", movie);
             Intent intent = new Intent(this, SeatBookingScreen.class);
+            intent.putExtras(extra);
             startActivity(intent);
         });
     }
