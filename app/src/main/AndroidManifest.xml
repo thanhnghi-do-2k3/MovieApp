@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -19,17 +19,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Screen.HistoryScreen"
+            android:exported="false" />
+        <activity
             android:name=".Screen.RegisterScreen"
             android:exported="false" />
         <activity
             android:name=".Screen.LoginScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Screen.SeatBookingScreen"
             android:exported="false" />
@@ -43,7 +40,13 @@
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".Screen.HomeScreen"
-            android:exported="false"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

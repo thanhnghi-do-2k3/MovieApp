@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/bottom_rounded_corner"
             android:scaleType="fitXY"
-            android:src="@drawable/_p3wgefagejleffedslrhixu7ngu" />
+            android:src= "@drawable/no_img_avai" />
 
         <View
             android:layout_width="match_parent"
@@ -148,7 +148,7 @@
 
                     <!-- TextView cho ngày -->
                     <TextView
-                        android:id="@+id/textView_date"
+                        android:id="@+id/date"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -160,7 +160,7 @@
 
                     <!-- TextView cho thời gian -->
                     <TextView
-                        android:id="@+id/textView_time"
+                        android:id="@+id/time"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -173,7 +173,7 @@
 
                 <!-- TextView cho địa điểm ở hàng dưới -->
                 <TextView
-                    android:id="@+id/textView_location"
+                    android:id="@+id/location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sathyam Cinemas: Royapettah"
@@ -247,6 +247,60 @@
         android:backgroundTint="#2196F3"
         app:layout_constraintBottom_toTopOf="@+id/guideline_FAB_end_hor"
         app:layout_constraintEnd_toStartOf="@+id/guideline_FAB_end_ver" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_FAB_end_hor"
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat_recycler_view">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:src="@drawable/ticket_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="x2"
+                android:textSize="26sp"
+                android:padding="0dp"
+                android:gravity="center"
+                android:id="@+id/number_seat"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Total:"
+                android:textSize="26sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="$ 23"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:id="@+id/total_money"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

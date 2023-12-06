@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:maxHeight="200dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Ticket Booking Information"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/yellow_top_border"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_gradient">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:id="@+id/movie_title"
+            android:text="Transformers: The Last Knight"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/movie_time"
+            android:text="Time: 10:00 AM"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/movie_date"
+            android:text="Date: 2017-07-01"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/movie_cinema"
+            android:text="Cinema: 1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/movie_total_seats"
+            android:text="Cinema: 1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/movie_total_price"
+            android:text="Cinema: 1"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Cancel"
+                android:id="@+id/cancel_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Book"
+                android:id="@+id/book_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/history"
+        android:title="Booking History"
+        android:icon="@drawable/baseline_history_24" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="User Profile"
+        android:icon="@drawable/profile_svgrepo_com" />
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Log out"
+        android:icon="@drawable/logout_svgrepo_com" />
+
+</menu>

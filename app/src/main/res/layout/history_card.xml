@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:padding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinearEnd"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/LinearEnd"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/movie_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movie's Name: Alibaba" />
+
+            <TextView
+                android:id="@+id/movie_date_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: 12/12/2020" />
+
+            <TextView
+                android:id="@+id/movie_time_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: 12:00" />
+
+            <TextView
+                android:id="@+id/movie_cinema_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cinema: 12/12/2020" />
+
+            <TextView
+                android:id="@+id/movie_seat_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number's of Seat Booked: " />
+
+            <TextView
+                android:id="@+id/movie_price_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price:" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/status_icon"
+            android:padding="0dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/status_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
